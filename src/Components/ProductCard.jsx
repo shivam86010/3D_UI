@@ -28,11 +28,10 @@ import { FaHeart } from "react-icons/fa";
 export default function ProductCard({ title, price, oldPrice, discount, image }) {
   return (
     <div className="relative bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition duration-300">
-      {/* Love Icon */}
-      <div className="absolute top-3 right-3 bg-white p-2 rounded-full shadow cursor-pointer text-gray-500 hover:text-red-500">
-        <FaHeart size={16} />
+  {/* Love Icon */}
+      <div className="absolute top-2 right-2 bg-white p-1 sm:p-2 rounded-full shadow cursor-pointer text-gray-500 hover:text-red-500 text-xs sm:text-base">
+        <FaHeart className="w-4 h-4 sm:w-5 sm:h-5" />
       </div>
-
       {/* Product Image */}
       <img src={image} alt={title} className="w-full h-60 object-cover" />
 

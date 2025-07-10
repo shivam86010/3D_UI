@@ -5,6 +5,12 @@ body{
 }
 .custom{
   /* scale: 1.02; */
-  transform: translateX(1px) scaleX(1.10);
+  
+  transform: translateX(-18px) scaleX(1.10);
+}
 
+@media (max-width: 640px) {
+  .custom {
+    transform: translateY(18px) scaleY(-1.2);
+  }
 }

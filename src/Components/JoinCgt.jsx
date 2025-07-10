@@ -22,7 +22,7 @@ export default function JoinCgt() {
           Join Squarebagal <br /> Community
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols md:grid-cols-3 gap-6">
           <div>
             <h4 className="font-bold text-lg">Galleries</h4>
             <p className="text-sm">Showcase your best renders, get feedback and recognition</p>

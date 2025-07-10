@@ -5,14 +5,14 @@ export default function AirPlane() {
   return (
     <section className="bg-white px-4 py-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left Image */}
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <img
-            src={PlaneImage}
-            alt="Plane character"
-            className="w-[300px] md:w-[400px] lg:w-[500px] object-contain"
-          />
-        </div>
+       {/* Desktop Image – show only on large screens */}
+<div className="hidden lg:flex w-full lg:w-1/2 justify-center">
+  <img
+    src={PlaneImage}
+    alt="Plane character"
+    className="w-[300px] md:w-[400px] lg:w-[500px] object-contain"
+  />
+</div>
 
         {/* Right Content */}
         <div className="w-full lg:w-1/2">
@@ -21,7 +21,7 @@ export default function AirPlane() {
             and Find Freelance Projects
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 text-gray-700 text-sm">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-x-8 gap-y-6 text-gray-700 text-sm">
             <div>
               <p className="mb-1 font-medium">Sell your 3D models and earn up to 80% royalties</p>
               <a href="#" className="text-teal-600 underline">Sell 3D Models</a>
@@ -40,6 +40,18 @@ export default function AirPlane() {
             </div>
           </div>
         </div>
+        
+       {/* Mobile Image – show only on small and medium screens */}
+<div className="flex lg:hidden w-full justify-center">
+  <img
+    src={PlaneImage}
+    alt="Plane character"
+    className="w-[300px] md:w-[400px] object-contain"
+  />
+</div>
+
+
+
       </div>
     </section>
   );
